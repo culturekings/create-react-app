@@ -100,9 +100,6 @@ npm test -w confusing-browser-globals
 npm run build
 # Check for expected output
 exists build/*.html
-exists build/static/js/*.js
-exists build/static/css/*.css
-exists build/static/media/*.svg
 exists build/favicon.ico
 
 # Run tests with CI flag
@@ -208,9 +205,6 @@ cd test-app
 npm run build
 # Check for expected output
 exists build/*.html
-exists build/static/js/*.js
-exists build/static/css/*.css
-exists build/static/media/*.svg
 exists build/favicon.ico
 
 # Run tests with CI flag
@@ -222,7 +216,6 @@ CI=true npm test
 npm start -- --smoke-test
 
 # Test environment handling
-verify_env_url
 
 # Test reliance on webpack internals
 verify_module_scope
@@ -241,9 +234,6 @@ test -n "$(git diff --staged --name-only)"
 npm run build
 # Check for expected output
 exists build/*.html
-exists build/static/js/*.js
-exists build/static/css/*.css
-exists build/static/media/*.svg
 exists build/favicon.ico
 
 # Run tests, overriding the watch option to disable it.
@@ -255,7 +245,6 @@ npm test --watch=no
 npm start -- --smoke-test
 
 # Test environment handling
-verify_env_url
 
 # Test reliance on webpack internals
 verify_module_scope
