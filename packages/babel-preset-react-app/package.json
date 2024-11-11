@@ -4,13 +4,11 @@
   "description": "Babel preset used by Create React App",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
+    "url": "https://github.com/culturekings/create-react-app.git",
     "directory": "packages/babel-preset-react-app"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
-  },
+
   "files": [
     "create.js",
     "dependencies.js",
